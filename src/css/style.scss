@@ -1,0 +1,86 @@
+@import './header';
+@import './footer';
+
+html, body, main, footer, section{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+div{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#wrapper{
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container{
+    max-width: none;
+}
+
+.position-static{
+    position: static;
+}
+
+.slick-prev-arrow-adjust{
+    transform: translateY(-2rem);;
+}
+
+.slick-next-arrow-adjust{
+    transform: translateX(-2rem) translateY(-2rem);;
+}
+
+.slick-item-adjust{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 601px){
+    .container{
+        
+        width: 100%;
+        max-width: none;
+    }
+
+    .slick-next-arrow-adjust{
+        transform: translateX(-1rem);
+    }
+}
+
+@media (min-width: 768px){
+    .slick-item-adjust{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media (min-width: 800px){
+    .slick-item-adjust{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+
+@media (min-width: 962px){
+    .slick-item-adjust{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media (min-width: 1280px){
+    .slick-item-adjust{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (min-width: 1536px){
+    .slick-item-adjust{
+        display: flex;
+    }
+}

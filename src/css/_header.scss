@@ -1,0 +1,306 @@
+.header{
+    height: 8rem;
+    width: 100%;
+
+    padding: 1rem;
+    
+    background: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+
+    display: block;
+
+    &__logo{
+        font-size: 2rem;
+        padding-bottom: 0.6rem;
+    }
+
+    span{
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+
+    img{
+        transform: translateX(-0.2rem) translateY(-0.05rem);
+    }
+
+    &__navbar{
+        background-color: #fdceb3;
+        border-bottom: solid #ff3f3a 0.2rem;
+        width: 100%;
+        max-width: 330px;
+        
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__burger-menu{
+        
+        position: static;
+        width: 100%;
+    }
+
+    &__burger-menu--list{
+        position: relative;
+    }
+
+    &__item{
+        font-weight: bold;
+
+        &-home{
+            font-weight: bold;
+        }
+
+        &-consultation{
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            text-align: left;
+            font-weight: bold;
+            font-size: inherit;
+            line-height: inherit;
+
+            &:hover, &:active{
+                background-color: transparent;
+                border-color: transparent;
+            }
+
+            &:not(:disabled):not(.disabled):active{
+                background-color: transparent;   
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+.blur-effect{
+    filter: blur(0.6rem);
+}
+
+@media(min-width: 360px){
+    .header__navbar{
+        max-width: 360px;
+    }
+}
+
+@media (min-width: 375px) {
+    .header__navbar{
+        max-width: 375px;
+    }   
+}
+
+@media (min-width: 400px) {
+    .header__navbar{
+        max-width: 500px;
+    }   
+}
+
+@media (min-width: 414px) {
+    .header__navbar{
+        max-width: 414px;
+    }   
+}
+
+@media(min-width: 440px){
+    .header__navbar{
+        max-width: 440px;
+    }
+}
+
+@media(min-width: 480px){
+    .header__navbar{
+        max-width: 480px;
+    }
+}
+
+@media(min-width: 520px){
+    .header__navbar{
+        max-width: 520px;
+    }
+}
+
+@media(min-width: 560px){
+    .header__navbar{
+        max-width: 560px;
+    }
+}
+
+@media(min-width: 601px){
+    .header__navbar{
+        max-width: 601px;       
+    }   
+}
+
+@media(min-width: 640px){
+    .header__navbar{
+        max-width: 640px;       
+    }   
+}
+
+@media(min-width: 664px){
+    .header__navbar{
+        max-width: 664px;       
+    }   
+}
+
+@media(min-width: 700px){
+    .header__navbar{
+        max-width: 700px;       
+    }   
+}
+
+@media(min-width: 768px){
+    .header__navbar{
+        max-width: 768px;       
+    }   
+}
+
+@media(min-width: 800px){
+    .header__navbar{
+        max-width: 800px;       
+    }   
+}
+
+
+@media(min-width: 850px){
+    .header__navbar{
+        max-width: 850px;       
+    }   
+}
+
+
+@media(min-width: 900px){
+    .header__navbar{
+        max-width: 900px;       
+    }   
+}
+
+
+@media(min-width: 962px){
+    .header__navbar{
+        max-width: 962px;       
+    }   
+}
+
+@media(min-width: 1000px){
+    .header__navbar{
+        max-width: 1000px;       
+    }   
+}
+
+@media(min-width: 1080px){
+    .header__logo{
+        width: 10rem;
+    }
+    
+    .header__navbar{
+        max-width: 1080px;       
+    }   
+}
+
+@media(min-width: 1100px){
+    .header__navbar{
+        max-width: 1100px;       
+    }   
+}
+
+@media(min-width: 1200px){
+    
+    .header__navbar{
+        max-width: 1200px;       
+    }   
+}
+
+@media(min-width: 1280px){
+    .header__navbar{
+
+        background-color: transparent;
+
+        max-width: 1280px;       
+
+        display: grid;
+        grid-template-areas: ". .";
+        grid-template-columns: 0.2fr 1fr;
+
+        position: static;
+
+        border-bottom: none;
+
+        padding-right: 6rem;
+    }   
+    
+    .header__burger-menu--list{
+        display: grid;
+        grid-template-areas: ". . . . . . consultation login";
+        grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 1.6fr 0.7fr;
+
+    }
+
+    .header__item{
+        padding-top: 0.4rem;
+        text-align: center;
+    }
+
+    .header__item-home{
+        display: none;
+    }
+
+    .header__item-login{
+        grid-area: login;
+    }
+
+    .header__item-consultation{
+        grid-area: consultation;
+
+        background-color: #FF3F3A;
+        border-color: #FF3F3A;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;       
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        font-size: .875rem;
+        line-height: 1.5;
+        text-align: center;
+        white-space: nowrap;
+
+        margin-right: 1.6rem;
+        margin-left: 2rem;
+    }
+
+    #consultation-link{
+        color: #fff;
+    }
+
+}
+
+@media(min-width: 1440px){
+    .header__navbar{
+        max-width: 1440px;
+        padding-right: 0rem;
+    }
+
+    .header__item-consultation, .header__item-login{
+        transform: translateX(6rem);
+    }
+}
+
+@media(min-width: 1536px){
+    .header__navbar{
+        max-width: 1536px;
+    }
+
+    .header__item-consultation{
+        margin-right: 4rem;
+    }
+}
+
+@media(min-height: 1280px){
+    .header{
+        background: linear-gradient(55.95deg, rgba(255, 63, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+    }
+}
